@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books (Admin)</title>
+    <link rel="stylesheet" href="manage_books.css">
+</head>
+<body>
+    <header>
+        <h1>Admin: Manage Books</h1>
+    </header>
+    <div class="container">
+        <h2>Add New Book</h2>
+        <form id="addBookForm">
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" required>
+            <br>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" required>
+            <br>
+
+            <label for="summary">Summary:</label>
+            <textarea id="summary" required></textarea>
+            <br>
+
+            <label for="publicationDate">Publication Date:</label>
+            <input type="date" id="publicationDate" required>
+            <br>
+
+            <button type="submit">Add Book</button>
+        </form>
+
+        <h2>Manage Existing Books</h2>
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Summary</th>
+                    <th>Publication Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Book rows will be dynamically added here -->
+            </tbody>
+        </table>
+
+        <button onclick="location.href='admin_dashboard.html'">Go to Dashboard</button>
+    </div>
+
+    <script src="manage_books.js"></script>
+</body>
+</html>

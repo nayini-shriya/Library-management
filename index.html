@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System - Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <div class="main-container">
+        <!-- User Login / Sign Up Section -->
+        <div class="user-container">
+            <h2 align="center">User Login</h2>
+            <!-- User Login Form -->
+            <form id="loginForm" class="form">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Link to switch to Sign Up -->
+            <p>Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+
+            <!-- User Sign-Up Form (Initially hidden) -->
+            <form id="signUpForm" class="form" style="display:none;">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="email" id="signupEmail" placeholder="Email" required> <!-- Email Field -->
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Admin Login Section -->
+        <div class="admin-container">
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm" class="form">
+                <input type="text" id="adminUsername" placeholder="Admin Username" required>
+                <input type="password" id="adminPassword" placeholder="Admin Password" required>
+                <button type="submit">Login as Admin</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

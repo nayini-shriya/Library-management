@@ -1,0 +1,136 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a font family to the entire document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 20px;
+}
+
+/* Style for the header */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #3498db; /* Header color */
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Header text size */
+}
+
+/* Container for the main content */
+.container {
+    background-color: white;
+    margin-top: 20px; /* Spacing below the header */
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading styles */
+.container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Textarea specific styling */
+textarea {
+    height: 80px;
+    resize: none; /* Prevents resizing */
+}
+
+/* Button styling */
+button {
+    background-color: #3498db; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border */
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* Table header styling */
+table thead {
+    background-color: #3498db; /* Header background color */
+    color: white; /* Header text color */
+}
+
+/* Row hover effect */
+table tbody tr:hover {
+    background-color: #f2f2f2; /* Light grey on row hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width on smaller screens */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Smaller header on mobile */
+    }
+
+    table th,
+    table td {
+        font-size: 1rem; /* Smaller text in table */
+        padding: 10px; /* Less padding in table cells */
+    }
+}

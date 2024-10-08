@@ -1,0 +1,93 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a font family to the entire document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style for the header */
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #5cb85c;
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Container for the main content */
+.container {
+    background-color: white;
+    padding: 30px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 800px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Style for the buttons */
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
